@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Banco Secretarial</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="logop.png">
+</head>
+<script>
+function comosea(){
+
+   user=document.fo.user.value
+ pass=document.fo.pass.value
+
+if(user=="admin" && pass=="123"){
+	alert("Los datos son correctos"); window.location=href="user.html"
+}else{
+	alert("ERROR"); 
+	window.location=href="principal.html"
+}
+}
+</script>
+<body >
+
+    <center><img src="logop.png" width="250" height="250"></center>
+    <hr>
+
+
+     <table border="1" border="black" cellpadding="10" width="1325" bgcolor="pink" font-color="black">
+    <th><center><b><a href="index.html"> Conocenos</a></b></center></th>
+            <th><center><b><a href="productos.html"> Productos y servicios</a></b></center></th>
+                <th><center><b><a href="contactos.html">Contactanos</a></b></center></th>
+                    <th><center><b><a href="comentarios.html"> usuario</a></b></center></th>
+     </table>
+     <br>
+    
+    
+<center><h1>Ingrese sus datos</h1></center> 
+
+
+<center>
+
+		<form name=fo>
+<h4>Ingrese su nombre: </h4>
+<input name="user" size="30px">
+
+<h4>Ingrese su contraseña: </h4>
+<input type="password" name="pass" size="30px">
+<br>
+<input type="button" value="Siguiente" onClick="comosea()" >
+
+</form>
+</center>
+
+
+
+</body>
+</html>
